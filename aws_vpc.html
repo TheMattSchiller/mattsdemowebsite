@@ -49,7 +49,7 @@
                 <div class="panel bor-bottm-non">
                     <img src="images/image3.jpg" alt="image" />
                     <div class="content">
-                    	<p>Visit Matt's GitHub page containing the code used in this demonstration</p>
+                    	<p>Visit Matt's GitHub page containing some of the code used in this demonstration</p>
                         <div class="button"><a href="https://github.com/TheMattSchiller" target="_blank">More</a></div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
             <div class="content">
 							<p>There are 6 subnets in this VPC allowing for partitioning of security and high availibilty across two availibility zones, us west 2a, and us west 2b. The reliability of each of these instances is 99.95% uptime per month as guaranteed by Amazon, therefore having parrallel infranstructure in each availibility zone ensures constantly availible services.</p>
 							<p>This AWS VPC is managed via open vpn with credentials from active directory. Normal clients have access to specific services such as DNS (port 53), and authentication (port 389). This VPC also features two ubuntu instances with an interface in the DMZ and another in the Core. This allows the Domain Controllers to securely connect to the internet.</p>
-							<p>The server you are on right now is one of the "munki" instances shown in the above diagram of the VPC. These Apache web servers serve this website as well as the munki repository. This is normally secured with client and server side SSL Certificates. For the purpose of this demonstraton, the munki repository can be viewed <a href="/munki/repo/"> here.</a>
+							<p>The server you are on right now is one of the "munki" instances shown in the above diagram of the VPC. These Apache web servers serve this website as well as the munki repository. This is normally secured with client and server side SSL Certificates. For the purpose of this demonstraton, the munki repository can be viewed <a href="/munki/" target="_blank"> here.</a>
 							<p>corp.mattsdemo.ax.lt is the subdomain to mattsdemo.ax.lt and is the internal DNS zone for this demonstration. Incoming requests to mattsdemo.ax.lt are distributed to the web servers using Amazon's Elastic Load Balancer. This also drastically improves the speed at which clients can install updates as well as the total number of clients which can be simultaneously served. Watch the video on the <a href="index.html">Welcome Page</a> for a demonstration.
             </div>
         </div>
