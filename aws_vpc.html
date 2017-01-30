@@ -8,15 +8,15 @@
 </head>
 <body>
 
-<div class="header-wrap">
-	<div class="header">
-		<div class="logo"><h1>Matt Schiller's Demo</h1></div>
+	<div class="header-wrap">
+		<div class="header">
+			<div class="logo"><h1>Matt Schiller's Demo</h1></div>
 		<div class="menu">
         	<ul>
-        		<li><a href="index.html" class="active">Welcome</a></li>
-                <li><a href="aws_vpc.html">AWS VPC Setup          </a></li>
-                <li><a href="conf_mgmt.html">Configuration Management         </a></li>
-								<li><a href="code.html">Demo Code          </a></li>
+        		<li><a href="index.html" >Welcome</a></li>
+                <li><a href="aws_vpc.html" class="active">AWS VPC Setup          </a></li>
+                <li><a href="conf_mgmt.html">Configuration Management           </a></li>
+                <li><a href="code.html">Demo Code        </a></li>
                 <li><a href="resume.html">Resume</a></li>
         	</ul>
         </div>
@@ -24,10 +24,12 @@
 </div><!---header-wrap--->
 <div class="wrap">
 	<div class="leftcol">
+
 		<div class="block">
         	<div class="panel">
         	</div>
 		</div>
+
         <div class="block2">
         	<div class="title"><h1>Features of this Demonstration</h1></div>
             	<div class="panel">
@@ -53,46 +55,19 @@
                 </div>
             </div>
 	</div><!---leftcol--->
+<div class="banner"><img src="images/aws-demo-map.jpg" alt="image" /></div>
 <div class="rightcol">
-	<div class="banner"><iframe width="680" height="380" src="https://www.youtube.com/embed/r0qwyEBNj0I" frameborder="0" allowfullscreen></iframe></div>
-	<div class="page">
+	<div class="page-content">
 		<div class="panel mar-bottom">
 			<div class="title">
-            	<h1>Welcome to mattsdemo.ax.lt!</h1>
-                <h2>Please watch the above video for an overview of the features of this demonstration</h2>
+            	<h1>Amazon Web Services</h1>
+                <h2>Virtual Private Cloud Setup</h2>
             </div>
             <div class="content">
-							<p>This scalable and portable AWS VPC allows for automated remote deployment of client computers, many of most popular software for Mac, as well as custom applications and packages. The system can be raplidly replicated to scale an organization's infrastructre to branch offices and remote clients via vpn. Active Directory accounts are used across clients and servers (with the exception of linux). Linux administration is provided via Chef. Some key projects and systems used in this demonstration include:
-							<ul>
-							<li><strong>Amazon Web Services</strong>
-							<ul>
-							<li> -- VPC</li>
-							<li> -- EC2</li>
-							<li> -- EBS</li></p>
-							</ul>
-							</li>
-							<p><li><strong>MacOS Client Administration</strong>
-							<ul>
-							<li> -- Munki</li>
-							<li> -- DeploySudio</li>
-							<li> -- AutoPkg</li>
-							<li> -- MacOS Server</li>
-							<li> -- Active Directory bound</li></p>
-							</ul>
-							</li>
-							<p><li><strong>Linux Client Deployment and Adminstration</strong>
-							<ul>
-							<li> -- AWS AMI deployment</li>
-							<li> -- Chef Configuration Management</li>
-							<li> -- Apache Web Server</li>
-							<li> -- OpenSSL Certificate Authority</li></p>
-							</ul>
-							</li>
-							<p><li><strong>Windows Server and Client Administration</strong>
-							<ul>
-							<li> -- Active Directory</li>
-							<li> -- DNS</li>
-							<li> -- Group Policy</li></p>
+							<p>There are 6 subnets in this VPC allowing for partitioning of security and high availibilty across two availibility zones, us west 2a, and us west 2b. The reliability of each of these instances is 99.95% uptime per month as guaranteed by Amazon, therefore having parrallel infranstructure in each availibility zone ensures constantly availible services.</p>
+							<p>This AWS VPC is managed via open vpn with credentials from active directory. Normal clients have access to specific services such as DNS (port 53), and authentication (port 389). This VPC also features two ubuntu instances with an interface in the DMZ and another in the Core. This allows the Domain Controllers to securely connect to the internet.</p>
+							<p>The server you are on right now is one of the "munki" instances shown in the above diagram of the VPC. These Apache web servers serve this website as well as the munki repository. This is normally secured with client and server side SSL Certificates. For the purpose of this demonstraton, the munki repository can be viewed <a href="/munki/repo/"> here.</a>
+							<p>corp.mattsdemo.ax.lt is the subdomain to mattsdemo.ax.lt and is the internal DNS zone for this demonstration. Incoming requests to mattsdemo.ax.lt are distributed to the web servers using Amazon's Elastic Load Balancer. This also drastically improves the speed at which clients can install updates as well as the total number of clients which can be simultaneously served. Watch the video on the <a href="index.html">Welcome Page</a> for a demonstration.
             </div>
         </div>
         <div class="clearing"></div>

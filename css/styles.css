@@ -1,11 +1,11 @@
 /*-------------------------------------------------
-GLOBALS CLASSES 
+GLOBALS CLASSES
 -------------------------------------------------*/
 *{padding:0; margin:0;}
-body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1491c1; background:url(../images/bg.jpg) repeat;}
+body{ font-family: 'Lato', sans-serif; font-size:12px; color:#1491c1; background:url(../images/bg.jpg) repeat;}
 img{border:none;}
-h1{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff;}
-h2{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff; font-size:18px;}
+h1{ font-family: 'Lato', serif; font-weight:normal; color:#fff;}
+h2{ font-family: 'Lato', serif; font-weight:normal; color:#fff; font-size:18px;}
 P{ line-height:20px;}
 a{text-decoration:none; color:#1491c1;}
 a:hover{color:#fff;}
@@ -26,8 +26,8 @@ GENERAL CLASSES
 .title{}
 .content{}
 .wrap{width:960px; margin:0 auto;overflow:hidden; background:url(../images/page-bg.jpg);}
-.page{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:50px;}
-.page-content{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
+.page{ width:650px; margin:0 auto;overflow:hidden; padding-bottom:50px;}
+.page-content{ width:650px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
 .block{padding:20px 20px 20px 20px; margin:0 auto;}
 .block2{padding:20px 20px 20px 20px; margin:0 auto;}
 .button a{text-decoration:none; display:block; width:70px; height:30px; background:#1491c1; color:#ffffff; font-family:Arial, Helvetica, sans-serif; line-height:30px; text-align:center;}
@@ -36,7 +36,7 @@ GENERAL CLASSES
 /*-------------------------------------------------
 CONTENT CLASSES
 -------------------------------------------------*/
-.page-content{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
+.page-content{ width:650px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
 .page-content .content h3{ padding-bottom:20px;font-family: 'Droid Serif', serif; font-weight:normal; color:#fff; font-size:16px;}
 .page-content .content p{ padding-bottom:15px;}
 
@@ -46,7 +46,7 @@ HEADER CLASSES
 .header-wrap{ background:#083266; height:162px;}
 .header{ width:960px; margin:0 auto;}
 .logo{ float:left; background:#1491c1; width:300px; float:left;}
-.logo h1{font-size:52px; text-align:center; padding:52px 0px 50px 0px;}
+.logo h1{font-size:48px; text-align:center; padding:25px 0px 25px 0px;}
 
 .menu{ float:left;}
 .menu ul li{ list-style:none; float:left; border-right:#093e76 solid 1px; padding:115px 20px 30px 20px;}
@@ -78,15 +78,15 @@ LEFTCOL CLASSES
 .leftcol .content ul li{ list-style:none; border-bottom:#0c4680 solid 1px; line-height:40px;}
 .leftcol .content ul li a{ text-decoration:none; color:#1491c1;}
 .leftcol .content ul li a:hover{color:#80d2f8;}
-.leftcol .panel img{ float:left; border:#fff solid 4px; margin:9px 20px 0px 0px;}
+.leftcol .panel img{ float:left; border:#1491c1 solid 4px; margin:9px 20px 0px 0px;}
 .leftcol .panel .content{ color:#1491c1; overflow:hidden;}
 .leftcol .panel .content .button a{ width:53px; height:24px; line-height:24px; float:left; margin:15px 0px 20px 0px;}
 .block2 .panel{border-bottom:#0c4680 solid 1px; margin-bottom:18px;}
- 
+
 /*-------------------------------------------------
 RIGHT CLASSES
 -------------------------------------------------*/
-.rightcol{ float:left; width:660px; overflow:hidden;}
+.rightcol{ float:left; width:600px; overflow:visible;}
 .rightcol .title{ margin-bottom:25px;}
 .rightcol .button{ margin-top:0px;}
 .rightcol img{ float:left; margin-right:40px;}
@@ -111,7 +111,7 @@ BOX CLASSES
 CONTACT FORM CLASSS
 -------------------------------------------------*/
 
-.contact-form { background:#0d3d78; padding:30px; width:440px; float:left;}
+.contact-form { background:#0d3d78; padding:30px; width:40px; float:left;}
 .contact-form label {display: block; padding:10px 0 10px 0;}
 .contact-form label span {display: block; color:#fff;font-size:14px; float:left; width:80px; text-align:left; padding:5px 20px 0 0; font-family: 'Droid Serif', serif;}
 .contact-form .input_text {padding:10px 10px;width:318px;background:#07366b; border:none; color:#fff; outline:none;}
